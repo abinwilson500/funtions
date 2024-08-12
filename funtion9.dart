@@ -1,0 +1,23 @@
+import'dart:io'; 
+
+
+
+
+int fact(int n){
+int factorial=1;
+for(int i=2;i<=n;i++){
+factorial=factorial*i;
+}
+return factorial;
+
+}
+
+
+void main(){
+stdout.write("enter a number :");
+int? num=int.parse(stdin.readLineSync()!);
+int result=fact(num);
+print("factorial=$result");
+
+
+}
